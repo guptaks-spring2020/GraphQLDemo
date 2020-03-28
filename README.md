@@ -1,27 +1,27 @@
-# GraphQLDemo
+#GraphQLDemo
 
-## Graphene Django Project
+##Graphene Django Project
 This example project demonstrate an integration between Graphene and Django. You'll build an Event Model to access event objects through GraphQL.
 
 First you'll need to get the source of the project. Do this by cloning the repository:
 
-## Install dependencies
+##Install dependencies
 pip install -r requirements.txt
 
-## Create database table
+##Create database table
 python manage.py makemigrations
 python manage.py migrate
 
-## Create mock data
+##Create mock data
 $ python manage.py shell
 >>> from events.models import Event
 >>> Event.objects.create(name='ADBI', url='https://www.ADBI.com/')
 >>> Event.objects.create(name='graphql', url='https://www.graphql.com/')
 
-## Start the application
+##Start the application
 python manage.py runserver
 
-## Queries:
+##Queries:
 
 1. Fetch Data
 
