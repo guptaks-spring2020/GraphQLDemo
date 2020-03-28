@@ -66,6 +66,6 @@ class CreateEvent(graphene.Mutation):
 
 # Create event to the server
 class Mutation(graphene.ObjectType):
-    import pdb;
-    pdb.set_trace()
+    # import pdb;
+    # pdb.set_trace()
     create_event = CreateEvent.Field()
