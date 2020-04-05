@@ -19,7 +19,9 @@ from django.urls import path, include, reverse
 from django.views.decorators.csrf import csrf_exempt
 from graphene_django.views import GraphQLView
 
-
+#Unlike a RESTful API, there is only a single URL from which GraphQL is accessed.
+#Requests to this URL are handled by Graphene’s GraphQLView view.
+#This view will serve as GraphQL endpoint
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('graphql/', csrf_exempt(GraphQLView.as_view(graphiql=True))),
