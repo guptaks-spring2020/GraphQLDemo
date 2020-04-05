@@ -121,6 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#define the schema location for Graphene
 GRAPHENE = {
     'SCHEMA': 'GraphQLDemo.schema.schema',
 }
